@@ -1,18 +1,32 @@
 /* Styles */
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     font-family: "Roboto Mono", monospace;
     text-align: center;
-    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
-    background-color: #000000;
+    background-image: url("https://wallpapers.com/images/hd/tron-movie-digital-cover-h18cbisilxlnpw39.jpg");
+    background-attachment: fixed;
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     height: 100vh;
 }
 
+#content {
+    flex: 1;
+}
+
+#notflix {
+    max-width: 20rem;
+    margin-top: 4rem;
+}
+
 .page-title {
     color: whitesmoke;
     margin-top: 4rem;
+    font-size: xxx-large;
 }
 
 .inputs {
@@ -34,12 +48,17 @@ body {
     color: #bcbcbc;
 }
 
-.dropdown {
-    display: inline-block;
-    position: relative;
+p, a {
+    color: whitesmoke;
+    font-size: x-large;
+    text-decoration: none;
 }
 
-#response {
+a:hover {
+    color: #c00000;
+}
+
+#add {
     color: whitesmoke;
     background-color: #444444;
     border-radius: 0.7rem;
@@ -53,6 +72,55 @@ body {
     margin-top: 2rem;
 }
 
+#add:hover{
+    background-color: #363636;
+}
+
+#newDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0 , 0.3);
+    box-shadow: 3px 3px 2px 1px #292F40;
+    padding: 10px;
+    width: 18.75rem;
+    margin: 1.25rem;
+}
+
+#close {
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
+    margin-left: 80%;
+    color: whitesmoke;
+    background-color: #a52019;
+    box-shadow: 2px 2px 1px 3px #292F40;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+}
+
+#close:hover{
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: #c00000;
+    font-size: x-large;
+}
+
+#cardImage {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    max-height: 18rem;
+    margin: 1rem auto;
+}
+
 #divFooter {
     display: grid;
     place-items: center;
@@ -63,6 +131,6 @@ body {
     text-align: center;
     font-size: 0.7rem;
     padding: 1rem 0;
-    position: absolute;
     bottom: 3rem;
 }
+
